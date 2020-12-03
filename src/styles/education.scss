@@ -1,0 +1,34 @@
+.education {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	&Container {
+		display: grid;
+		grid-gap: 15px;	
+		padding: 15px;
+	}
+	&-card {
+		align-items: center;
+		border-radius: 5px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: center;
+		>div:first-child{
+			padding: 15px;
+			background-image: -webkit-linear-gradient(45deg, #dfdfdf21 0%, #f1f1f1 100%);
+			border-right: 5px solid $primBg;
+		}
+		> img {
+			padding: 15px;
+		}
+	}
+	&-title {
+		color: $terBg;
+		font-size: 5vh;
+		margin: auto;
+	}
+	&-classOf {
+		font-size: 12px;
+	}
+}

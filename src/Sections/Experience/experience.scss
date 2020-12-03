@@ -1,0 +1,44 @@
+.experience {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 500px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  transition: transform .2s; 
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+  }
+
+    &Container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        > p, h3 {
+          padding: 10px;
+        }
+    }
+    &-title {
+      font-size: 40px;
+      font-weight: bold;
+    }
+}
+
+.nespresso {
+  background-image: url("../../images/nespresso.jpeg"),
+}
+
+.bombardier {
+  background-image: url("../../images/bombardier.jpg"),
+
+}
+
+.neptronic {
+  background-image: url("../../images/nep.jpg"),
+}

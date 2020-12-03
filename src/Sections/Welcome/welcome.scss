@@ -1,0 +1,51 @@
+@import '../../styles/Base/colors.scss';
+.welcome {
+    &Container {
+            align-items: center;
+            animation: gradient 15s ease infinite;
+            background: linear-gradient(-45deg, $terBg, $primBg, $seconBg, $quadBg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 300px;
+            padidng: 20px;
+            background-size: 400% 400%;
+            height: 350px;
+            padding:5vh;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::before{
+                background: url("../../images/wave.svg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                bottom: 0;
+                content: '';
+                height: 50%;
+                @media screen and (max-width: 900px) {
+                    height: 35%;
+                }
+                left: 0;
+                position: absolute;
+                width: 100%;
+    
+            }
+        }
+    &-title {
+        align-items: center;
+        color: $lightFont;
+        display: flex;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+        text-shadow: 0 1px 0 rgba(black, .1);
+        &-sub {
+            text-align:center;
+            color: $lightFont;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+// .welcome {
+//     text-align: center;
+//     &-title {
+//         color: white;
+//         font-size: 4em;
+//         font-weight:bold;
+//         @media (max-width: 500px) {
+//             font-size: 3em;
+//         }
+//         &-sub {
+//             color: darken($lightFont, 50%);
+//             font-size: 1em;
+//             padding-top: 1vh;
+//             white-space: nowrap;
+//         }
+//     }
+//     &Container {
+//             animation: gradient 15s ease infinite;
+//             background: linear-gradient(-45deg, $terBg, $primBg, $seconBg, $quadBg);
+//             background-size: 400% 400%;
+//             height: 300px;
+//             padding:5vh;
+//             display: flex;
+//             justify-content: center;
+//             position: relative;
+//             &::before{
+//                 background: url("../images/wave.svg");
+//                 background-size: cover;
+//                 background-repeat: no-repeat;
+//                 bottom: 0;
+//                 content: '';
+//                 height: 60%;
+//                 left: 0;
+//                 position: absolute;
+//                 width: 100%;
+    
+//             }
+//         }
+// }

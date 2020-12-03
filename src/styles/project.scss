@@ -1,0 +1,85 @@
+.project {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  &-cone {
+    margin-top: -40px;
+    height: 0px;
+    width: 0px;
+    border-right: 90px solid transparent;
+    border-left: 90px solid transparent;
+    border-top: 180px solid tan;
+    z-index: 1;
+  }
+  margin: 30px;
+  //icecream
+  &-content {
+    background: $quadBg;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -2;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      height: 40px;
+      background: $quadBg;
+      width: 180px;
+      border-radius: 100%;
+      z-index: 2;
+    }
+    > a {
+      display: flex;
+      justify-content: center;
+      color: $darkFont;
+      font-weight: bold;
+      white-space: nowrap;
+      text-align: center;
+      font-size: 22px;
+    } 
+    > p {
+      font-size: 12px;
+      text-align: center;
+      color: darken($lightFont, 50%);
+      z-index: 2;
+    }
+    > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 46px;
+    }
+  }
+  &-icecreamContainer {
+    transform: rotate(6deg);
+  }
+  //page container
+  &Container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    > div {
+      background: linear-gradient(#e1e8ff, #ffffff, #c0d0f3, #ac95ff);
+      box-shadow: 5px 5px 15px rgba(#BA7E7E, .5);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px;
+      border-radius: 5px;
+      z-index: -3;
+      > div {
+        margin: 30px;
+      }
+    }
+  }
+}

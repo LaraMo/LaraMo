@@ -1,0 +1,23 @@
+@import '../../styles/Base/colors.scss';
+.education {
+    padding: 20px;
+    margin-right: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    &-title {
+        color: $primBg;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    &Container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+}
+

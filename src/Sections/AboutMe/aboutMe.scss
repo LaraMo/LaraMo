@@ -1,0 +1,55 @@
+@import '../../styles/Base/colors.scss';
+.aboutMe {
+  &Container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 35px;
+    justify-content: center;
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &-text {
+    height: 100%;
+    line-height: 50px;
+    > span {
+      border: 1px solid $primBg;
+      border-radius: 3px;
+      color: $primBg;
+      font-size: .75rem;
+      height: 1.5rem;
+      line-height: 1.5rem;
+      letter-spacing: 1px;
+      padding: 0 .5rem;
+      text-align: center;
+      text-transform: uppercase;
+      white-space: nowrap;
+      font-weight: bold;
+      background: white;
+    }
+    &-greetings {
+      color: $primBg;
+      font-size: 40px;
+      text-shadow:3px 3px $terBg;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-family: 'Playfair Display', serif;
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
+  }
+  &-image {
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: 600px) {
+          justify-content: center;
+      }
+      > img {
+        transform: rotate(-10deg);
+        box-shadow: 2px 1px rgba(0,0,0,0.5);
+        background: white;
+        padding: 10px 10px 50px 10px;
+      }
+  }
+}

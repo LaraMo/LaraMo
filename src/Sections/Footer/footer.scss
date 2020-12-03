@@ -1,0 +1,65 @@
+@import '../../styles/Base/colors.scss';
+.footer {
+  &Container {
+    align-items: center;
+    background: $seconBg;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 20px;
+    &:before {}
+  }
+  &-iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    > img {
+      height: 5vh;
+      margin: 10px;
+      width: 5vh;
+      &:hover {
+        box-shadow: 0 5px 4px  rgba(0,0,0,0.5);
+        transform: translate(0, -10px);
+      }
+    }
+  }
+  &-title {
+    color: $primBg;
+    font-size: 8vh;
+    font-weight: bold;
+    text-shadow: 3px 5px $seconBg;
+    text-align: center;
+    top: -60px;
+    position: absolute;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2px; 
+
+  }
+  &-creds {
+    font-size: 10px;
+    font-style: italic;
+  }
+}
+//hover over the icons background change
+#fb {
+  &:hover {
+    cursor: url("https://img.icons8.com/color/48/000000/unicorn.png"), auto;
+    background: #4267B2;
+  }
+}
+
+#insta {
+  &:hover {
+    cursor: url("https://img.icons8.com/color/48/000000/unicorn.png"), auto;
+    background: linear-gradient(0.45turn, #405DE6, #5851DB, #833AB4, #C13584, #E1306C,  #FD1D1D, #F56040);
+  }
+}
+
+#linked {
+  &:hover {
+    cursor: url("https://img.icons8.com/color/48/000000/unicorn.png"), auto;
+    background: #2867B2;;
+  }
+}
